@@ -1,0 +1,64 @@
+1) ng new FoodOrder
+2) ng serve --open
+3) create components
+      - ng g c navbar
+      - ng g c footer
+      - ng g c home
+      - ng g c menu
+      - ng g c about
+      - ng g c contact
+
+4) Path setting
+      - go to app-routing.module.ts
+            const routes: Routes = [
+                --------   inside this set the path
+            ];
+
+5) app.component.html
+      footer ans navbar router-outlet setting
+
+6) go to navbar.component.html
+      take a navbar code from the bootstrap
+      After copying do the changes as we need
+      Also give the style in navbar.component.css
+
+7) Next go to footer.component.html  
+      Create footbar design manually 
+      take the social media icon from the bootstrap (first copy the icon link from the bootstrap and then copy it into the index.html)
+      Then give the style in footer.component.css
+      
+8) Next create home page 
+      take home.component.html
+      create the design
+      And give the style in home.component.css page
+
+9) Create service folder(write click the app --> create folder -->services)
+     command prompt cd copy path of service folder
+     ng g s orderDetails
+
+10) orderDetails.service.ts 
+      create the food orderDetails
+
+11) home.component.ts
+      import OrderDetailsService
+      inject the OrderDetailsService in constructor
+
+12)home.component.html
+       add the fooddetails to html    
+
+13)Next Menu page
+      menu.component.ts  -
+            import OrderDetailsService
+            inject the OrderDetailsService in constructor
+
+      menu.component.html
+            give the design 
+            and set the style
+
+14)menupage page
+      menupage.component.ts  -
+            import router
+            inject the OrderDetailsService in constructor
+
+      
+     
